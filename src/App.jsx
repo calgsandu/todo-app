@@ -3,11 +3,10 @@ import Header from "./components/Header";
 import Tabs from "./components/Tabs";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
+import Alabala from "./components/Alabala";
 
 function App() {
-  const [todos, setTodos] = useState([
-    { input: "Hello! Add your first todo!", complete: true },
-  ]);
+  const [todos, setTodos] = useState([{ input: "Test 12334", complete: true }]);
   const [curTab, setCurTab] = useState("All");
 
   function handleAddTodo(newTodo) {
@@ -56,6 +55,7 @@ function App() {
         onhandleCompleteTodo={handleCompleteTodo}
       />
       <TodoInput onHandleAdd={handleAddTodo} />
+      <Alabala />
     </>
   );
 }
